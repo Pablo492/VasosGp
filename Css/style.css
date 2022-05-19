@@ -9,7 +9,8 @@ body{
 }
 
 h1{
-    
+    transform: scale(1,1);
+    transition: 5s;
     padding: 40px;
     color: rgb(63, 106, 223);
     text-align: center;
@@ -20,7 +21,7 @@ h1{
 }
 
 .menu{
-    background-color: rgb(195, 243, 253);
+    background-image: linear-gradient(to right, rgba(83, 127, 248, 0.275), rgb(0, 130, 244));
     font-style: italic;
     margin: 10px;
     padding:20px;
@@ -30,7 +31,9 @@ h1{
 }
 
 a{
-    color:rgb(94, 137, 255);
+    transform: translate(1px, 2px);
+    transition: 9s;
+    color:rgb(56, 90, 181);
     font-size: 20px;
     margin: 15px;
 }
@@ -42,9 +45,15 @@ a{
     position: relative;
 }
 
-.imgPortada {
-    width: 550px;
+.imgportada {
+    display: flex;
+    justify-content: center;
+    height: 300px;
     margin-left: 15px;
+    transition: 2s;
+}
+.imgportada:hover{
+    height: 400px;
 }
 
 .menu ul li:hover{
@@ -66,7 +75,7 @@ a{
 
 h2{
     margin-top: 50px;
-    margin-left: 120px;
+    margin-left: 250px;
     color:rgb(94, 137, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -119,7 +128,18 @@ footer {
 
 
 .imgBrindis{
+    margin-left: 100px;
     width: 300px;
+    animation-name: efect;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+
+}
+
+@keyframes efect {
+    0%{width: 100px;}
+    0.2s{width: 50px}
+    
 }
 
 .imgCont{   
@@ -132,17 +152,16 @@ footer {
     display: grid;
     grid-template-columns: 1fr 3fr 3fr;
     grid-template-areas: "header header header"
-                            "aside menu menu"
-                        "aside fila1 fila1"
-                         "aside fila2 fila2"
+                            "menu menu menu"
+                        "main main main"
+                         "combos combos  video"
                          "footer footer footer";
 }         
 
 header{grid-area: header;
         background-color: rgb(122, 189, 220);}
 .menu{grid-area: menu;}
-.columna1{grid-area: fila1;}
-.columna2{grid-area: fila2;}
-.combos{grid-area: fila1;}
-.video{grid-area: fila2}
+main{grid-area: main;}
+.combos{grid-area: combos;}
+.video{grid-area: video}
 footer{grid-area: footer;}
