@@ -9,7 +9,8 @@ body{
 }
 
 h1{
-    
+    transition: 5s;
+    transform: scale(1,1);
     padding: 40px;
     color: rgb(63, 106, 223);
     text-align: center;
@@ -20,7 +21,9 @@ h1{
 }
 
 .menu{
-    background-color: rgb(195, 243, 253);
+    transition: 8s;
+    transform: scale(1,1);
+    background-image:linear-gradient(to left, rgb(5, 111, 192), rgb(39, 54, 69));
     font-style: italic;
     margin: 10px;
     padding:20px;
@@ -30,6 +33,7 @@ h1{
 }
 
 a{
+
     color:rgb(94, 137, 255);
     font-size: 20px;
     margin: 15px;
@@ -42,9 +46,10 @@ a{
     position: relative;
 }
 
-.imgPortada {
-    width: 550px;
-    margin-left: 15px;
+.imgportada {
+    
+    width: 100px;
+    
 }
 
 .menu ul li:hover{
@@ -120,6 +125,16 @@ footer {
 
 .imgBrindis{
     width: 300px;
+    margin-left: 150px;
+    animation-name: efect;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+@keyframes efect {
+    0% { width:100px}
+    50% {width: 150px;}
+    100% { width: 300px;}
 }
 
 .imgCont{   
@@ -132,17 +147,16 @@ footer {
     display: grid;
     grid-template-columns: 1fr 3fr 3fr;
     grid-template-areas: "header header header"
-                            "aside menu menu"
-                        "aside fila1 fila1"
-                         "aside fila2 fila2"
+                            "menu menu menu"
+                        "main main main"
+                         "combos combos video"
                          "footer footer footer";
 }         
 
 header{grid-area: header;
         background-color: rgb(122, 189, 220);}
 .menu{grid-area: menu;}
-.columna1{grid-area: fila1;}
-.columna2{grid-area: fila2;}
-.combos{grid-area: fila1;}
-.video{grid-area: fila2}
+main{grid-area: main;}
+.combos{grid-area: combos;}
+.video{grid-area: video}
 footer{grid-area: footer;}
