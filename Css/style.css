@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(232, 218, 186);
+}
+
+h1{
+    
+    padding: 40px;
+    color: rgb(63, 106, 223);
+    text-align: center;
+    text-decoration: underline;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: bangers;
+}
+
+.menu{
+    background-color: rgb(195, 243, 253);
+    font-style: italic;
+    margin: 10px;
+    padding:20px;
+    text-align:center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+a{
+    color:rgb(94, 137, 255);
+    font-size: 20px;
+    margin: 15px;
+}
+
+.menu ul li{
+    text-decoration: none;
+    list-style-type:none;
+    display: inline-block;
+    position: relative;
+}
+
+.imgPortada {
+    width: 550px;
+    margin-left: 15px;
+}
+
+.menu ul li:hover{
+    background-color: rgb(155, 177, 250);
+    font-size:20px;
+    color: rgb(94, 137, 255);
+}
+
+.sub-menu{
+    display: none;
+    position:inherit;
+    padding: 5px;
+}
+
+.menu ul li:hover > ul{
+    display: block;
+    background-color: rgb(195, 243, 253);
+}
+
+h2{
+    margin-top: 50px;
+    margin-left: 120px;
+    color:rgb(94, 137, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3{
+    color: rgb(0, 192, 251);
+    margin: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contactos li {
+    margin: 30px;
+    padding: 30px;
+    display:inline-block;
+    position:relative;
+
+}
+h4{
+    color: rgb(57, 142, 232);
+    font-family: bangers;
+    font-size:larger;
+}
+
+.tabla { 
+    text-align: center;
+    background-color: rgb(113, 119, 140);
+    font-size:large;
+    color: rgb(0, 192, 251);
+    margin: 60px;
+}
+
+p{
+    padding: 25px;
+    color: rgb(127, 143, 194);
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.formulario{
+    margin: 25px;
+    padding: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer {
+    text-align:end;
+    background-color: rgb(195, 243, 253);
+    color: rgb(63, 106, 223);
+    font-size: smaller ;
+    font-style: italic;
+    font-family: bangers;
+}
+
+
+.imgBrindis{
+    width: 300px;
+}
+
+.imgCont{   
+    margin: 40px;
+    width: 50px;
+    height: 50px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+    grid-template-areas: "header header header"
+                            "aside menu menu"
+                        "aside fila1 fila1"
+                         "aside fila2 fila2"
+                         "footer footer footer";
+}         
+
+header{grid-area: header;
+        background-color: rgb(122, 189, 220);}
+.menu{grid-area: menu;}
+.columna1{grid-area: fila1;}
+.columna2{grid-area: fila2;}
+.combos{grid-area: fila1;}
+.video{grid-area: fila2}
+footer{grid-area: footer;}
