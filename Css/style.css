@@ -9,13 +9,8 @@ body{
 }
 
 h1{
-<<<<<<< HEAD
     transform: scale(1,1);
     transition: 5s;
-=======
-    transition: 5s;
-    transform: scale(1,1);
->>>>>>> rama2
     padding: 40px;
     color: rgb(63, 106, 223);
     text-align: center;
@@ -26,13 +21,10 @@ h1{
 }
 
 .menu{
-<<<<<<< HEAD
     background-image: linear-gradient(to right, rgba(83, 127, 248, 0.275), rgb(0, 130, 244));
-=======
     transition: 8s;
     transform: scale(1,1);
     background-image:linear-gradient(to left, rgb(5, 111, 192), rgb(39, 54, 69));
->>>>>>> rama2
     font-style: italic;
     margin: 10px;
     padding:20px;
@@ -42,17 +34,9 @@ h1{
 }
 
 a{
-<<<<<<< HEAD
-<<<<<<< HEAD
     transform: translate(1px, 2px);
     transition: 9s;
     color:rgb(56, 90, 181);
-=======
-
-=======
->>>>>>> rama2
-    color:rgb(94, 137, 255);
->>>>>>> rama2
     font-size: 20px;
     margin: 15px;
 }
@@ -65,8 +49,6 @@ a{
 }
 
 .imgportada {
-<<<<<<< HEAD
-<<<<<<< HEAD
     display: flex;
     justify-content: center;
     height: 300px;
@@ -75,14 +57,7 @@ a{
 }
 .imgportada:hover{
     height: 400px;
-=======
-    
     width: 100px;
-    
->>>>>>> rama2
-=======
-    width: 100px;
->>>>>>> rama2
 }
 
 .menu ul li:hover{
@@ -160,29 +135,16 @@ footer {
 .imgBrindis{
     margin-left: 100px;
     width: 300px;
-<<<<<<< HEAD
-    animation-name: efect;
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
-
-}
-
-@keyframes efect {
-    0%{width: 100px;}
-    0.2s{width: 50px}
-    
-=======
-    margin-left: 150px;
     animation-name: efect;
     animation-iteration-count: infinite;
     animation-duration: 5s;
 }
+
 
 @keyframes efect {
     0% { width:100px}
     50% {width: 150px;}
     100% { width: 300px;}
->>>>>>> rama2
 }
 
 .imgCont{   
@@ -197,11 +159,8 @@ footer {
     grid-template-areas: "header header header"
                             "menu menu menu"
                         "main main main"
-<<<<<<< HEAD
                          "combos combos  video"
-=======
                          "combos combos video"
->>>>>>> rama2
                          "footer footer footer";
 }         
 
