@@ -63,6 +63,7 @@ a{
 
 .imgportada {
 <<<<<<< HEAD
+<<<<<<< HEAD
     display: flex;
     justify-content: center;
     height: 300px;
@@ -75,6 +76,9 @@ a{
     
     width: 100px;
     
+>>>>>>> rama2
+=======
+    width: 100px;
 >>>>>>> rama2
 }
 
@@ -133,6 +137,7 @@ p{
     color: rgb(127, 143, 194);
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
+
 .formulario{
     margin: 25px;
     padding: 30px;
@@ -147,7 +152,6 @@ footer {
     font-style: italic;
     font-family: bangers;
 }
-
 
 .imgBrindis{
     margin-left: 100px;
