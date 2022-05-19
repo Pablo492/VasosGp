@@ -33,7 +33,6 @@ h1{
 }
 
 a{
-
     color:rgb(94, 137, 255);
     font-size: 20px;
     margin: 15px;
@@ -79,13 +78,14 @@ h3{
     margin: 35px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .contactos li {
     margin: 30px;
     padding: 30px;
     display:inline-block;
     position:relative;
-
 }
+
 h4{
     color: rgb(57, 142, 232);
     font-family: bangers;
