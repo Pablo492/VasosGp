@@ -19,6 +19,13 @@ h1{
     font-weight: bold;
     font-family: bangers;
 }
+.navbar-brand{
+    color:rgb(2, 93, 158);
+}
+nav{
+    background-image:linear-gradient(to left, rgb(5, 111, 192), rgb(39, 54, 69));
+}
+
 
 .menu{
     background-image: linear-gradient(to right, rgba(83, 127, 248, 0.275), rgb(0, 130, 244));
@@ -32,6 +39,7 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
 }
+
 
 a{
     transform: translate(1px, 2px);
@@ -171,3 +179,4 @@ main{grid-area: main;}
 .combos{grid-area: combos;}
 .video{grid-area: video}
 footer{grid-area: footer;}
+
